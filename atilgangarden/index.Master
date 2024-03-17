@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.master.cs" Inherits="atilgangarden.index" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Atılgan Düğün Salonu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+    <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+    <meta name="author" content="freehtml5.co" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="fh5co-loader"></div>
+
+        <div id="page">
+            <nav class="fh5co-nav" role="navigation">
+                <!-- <div class="top-menu"> -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 text-center logo-wrap">
+                            <div id="fh5co-logo"><a href="index.html">Tasty<span>.</span></a></div>
+                        </div>
+                        <div class="col-xs-12 text-center menu-1 menu-wrap">
+                            <ul>
+                                <li><a href="index.aspx">Anasayfa</a></li>
+                                <li><a href="gallery.aspx">Galeri</a></li>
+                                <li><a href="about.aspx">Hakkımızda</a></li>
+                                <li><a href="contact.aspx">İletişim</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- </div> -->
+            </nav>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer id="fh5co-footer" role="contentinfo" class="fh5co-section">
+                <div class="container">
+
+                    <div class="row copyright">
+                        <div class="col-md-12 text-center">
+                            
+                            <p>
+                                <small class="block">Designed by <a href="http://www.appsoly.com" target="_blank"><img src="images/banner/appsoly.png" style="width: 6%;" /></a> <a href="http://hhbadak.dev" target="_blank">HHBadak</a></small>
+                            </p>
+                            <p>
+                                <ul class="fh5co-social-icons">
+                                    <li><a href="https://www.instagram.com/explore/locations/261899133/atlgan-dugun-salonu-eskisehir/"><i class="icon-instagram2"></i></a></li>
+                                    <li><a href="https://www.facebook.com/p/At%C4%B1lgan-D%C3%BC%C4%9F%C3%BCn-Salonu-Eski%C5%9Fehir-100069672141971/?locale=fr_FR"><i class="icon-facebook2"></i></a></li>
+                                    <li><a href="https://dugun.com/dugun-salonlari/eskisehir/atilgan-dugun-salonlari"><i class="icon-dribbble2"></i></a></li>
+                                    <li><a href="https://tr.foursquare.com/v/at%C4%B1lgan-d%C3%BC%C4%9F%C3%BCn-salonu/5038cc54e4b0c1904ec69662"><i class="icon-foursquare2"></i></a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+
+        <div class="gototop js-top">
+            <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+        </div>
+        <script>
+            // URL'yi kontrol eden ve ilgili bağlantıya "active" class'ını ekleyen JavaScript
+            document.addEventListener("DOMContentLoaded", function () {
+                var currentPage = window.location.href;
+                var menuLinks = document.querySelectorAll(".menu-wrap ul li a");
+
+                menuLinks.forEach(function (link) {
+                    if (link.href === currentPage) {
+                        link.parentNode.classList.add("active");
+                    }
+                });
+            });
+        </script>
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- Waypoints -->
+        <script src="js/jquery.stellar.min.js"></script>
+        <!-- Flexslider -->
+        <script src="js/jquery.flexslider-min.js"></script>
+        <!-- Main -->
+        <script src="js/main.js"></script>
+
+    </form>
+</body>
+</html>
