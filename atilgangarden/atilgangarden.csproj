@@ -87,6 +87,7 @@
     <Content Include="gallery.aspx" />
     <Content Include="images\banner\appsoly.png" />
     <Content Include="images\banner\banner.jpg" />
+    <Content Include="images\banner\logo.jpg" />
     <Content Include="images\banner\nav.jpg" />
     <Content Include="images\broken_noise.png" />
     <Content Include="images\broken_noise_%402X.png" />
